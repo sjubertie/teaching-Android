@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:id="@+id/name"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/app_name"
+    />
+<TextView  
+    android:id="@+id/valueX"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="value"
+    />
+<TextView  
+    android:id="@+id/valueY"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="value"
+    />
+<TextView  
+    android:id="@+id/valueZ"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="value"
+    />
+</LinearLayout>
+
