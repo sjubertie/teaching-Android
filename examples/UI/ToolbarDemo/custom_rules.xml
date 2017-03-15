@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project  default="run">
+
+  <condition property="jnidirexists">
+    <available file="./jni" type="dir"/>
+  </condition>
+  
+  <target name="jni" if="jnidirexists">
+    <exec executable="ndk-build" failonerror="true"/>      
+  </target>
+  
+  <target name="run" depends="debug,install,jni">
+    <xpath input="AndroidManifest.xml"
+           expression="/manifest/@package" output="project.app.package" />
+    <xpath input="AndroidManifest.xml"
+           expression="/manifest/application/activity/@android:name" output="project.app.activityname" />
+    <exec executable="adb" failonerror="true">
+      <arg line="shell am start"/>
+      <arg line="-a android.intent.action.MAIN"/>
+      <arg line="-n ${project.app.package}/.${project.app.activityname}"/>
+    </exec>
+  </target>
+  
+</project>
