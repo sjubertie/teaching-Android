@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Toast"
+      android:onClick="toast"      
+      />
+  <Button
+      android:id="@+id/bt0"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Run AsyncTaskTest"
+      android:onClick="onClick"      
+      />
+  <TextView
+      android:id="@+id/tv0"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Hello World, AsyncTaskDemoActivity"
+      />
+ </LinearLayout>
+
