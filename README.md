@@ -17,3 +17,6 @@ $ ant run
 ```
 Otherwise, try to import it into your favorite IDE...
 
+# Warning
+
+All the examples should run on all Android versions except the UI/ToolbarDemo which requires Android 5.0 or greater.
