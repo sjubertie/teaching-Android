@@ -1,6 +1,7 @@
 #!/bin/bash
 
-ANDROID_SDK_PATH="/home/orion/opt/android-sdk"
+# Put your path to the Android SDK here.
+ANDROID_SDK_PATH=""
 PROJECT_NAME=""
 ACTIVITY_NAME=""
 PACKAGE_NAME=""
